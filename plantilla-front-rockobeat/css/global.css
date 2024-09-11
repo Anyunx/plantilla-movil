@@ -1,0 +1,25 @@
+/* Variables globales */
+:root{
+    --color-principal:#1F51FF;
+    --color-segundario:#FF007F;
+    --color-terciario:#0000;
+    --font-principal:"Montserrat", sans-serif;
+    --font-segundario:"Roboto", sans-serif;
+
+}
+/* Resetear valores por defecto del navegador */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+h1{
+    font-family: var(--font-principal);
+    color: var(--color-principal);
+}
+
+h3{
+    font-family: var(--font-segundario);
+}

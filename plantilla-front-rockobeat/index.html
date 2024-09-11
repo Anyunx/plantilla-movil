@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- Fuentes externas de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Server</title>
+    <!-- API de IFrame de YouTube -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player("ytplayer", {
+          height: "100%",
+          width: "100%",
+          videoId: "8gf0G-pLsGA", // Reemplaza con el ID de tu video
+          playerVars: {
+            autoplay: 1,
+            controls: 0, // Desactivar controles de YouTube
+            disablekb: 1,
+            fs: 0,
+            modestbranding: 1,
+            rel: 0,
+            showinfo: 0,
+            iv_load_policy: 3, // Desactivar anotaciones
+          },
+          events: {
+            onReady: onPlayerReady,
+          },
+        });
+      }
+
+      function onPlayerReady(event) {
+        var iframe = document.getElementById("ytplayer");
+        iframe.setAttribute("allow", "autoplay; encrypted-media");
+        iframe.setAttribute("disablepictureinpicture", "");
+        iframe.setAttribute(
+          "controlsList",
+          "nofullscreen nodownload noremoteplayback"
+        );
+      }
+
+      // Desactivar pausa al hacer clic en el video
+      document.addEventListener(
+        "click",
+        function (e) {
+          if (e.target.tagName.toLowerCase() === "iframe") {
+            e.preventDefault();
+          }
+        },
+        true
+      );
+    </script>
+  </head>
+  <body>
+    <main class="contenedor">
+      <!--Contenido del video-->
+      <section class="content">
+        <div class="video" id="ytplayer">
+        </div>
+      </section>
+      <aside>
+        <!--Logo-->
+        <div class="header">
+          <h4>ID: 4052</h4>
+          <h1>ROCKO<span>BEAT</span></h1>
+        </div>
+        <!--Cola de reproducción-->
+        <div class="lista-videos">
+          <ul>
+            <li>
+              <a href="#" class="mini"><img src="img/video-small.jfif" /></a>
+              <h3>
+                Bunbury, Arde Bogotá - De vuelta a casa (Lyric Video Oficial)
+              </h3>
+            </li>
+          </ul>
+        </div>
+        <!--Canciones en cola-->
+        <div class="contador-pendientes">
+          <h5>Canciones en Cola 1</h5>
+        </div>
+        <div class="qr-code">
+          <img src="img/qr_code.png" alt="">
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>

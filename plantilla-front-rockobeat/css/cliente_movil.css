@@ -1,0 +1,169 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 5px;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    font-size: 2em;
+    color: #0066cc;
+    font-family: var(--font-segundario);
+}
+
+.logo span{
+    color: #ff3366;
+    font-family: var(--font-principal);
+}
+
+.icono {
+    font-size: 2em;
+    color: #0066cc;
+}
+
+.offline-online {
+    font-size: 1.5em;
+    float: right;
+}
+
+.online {
+    color: #84d807;
+}
+
+.offline {
+    color: #e90b0b;
+}
+
+nav {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.menu-btn {
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+/* Main content styling */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-section, .storage-section {
+    margin-bottom: 20px;
+}
+h3{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+#search-input, #storage-input {
+    width: 85%;
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 5px;
+}
+.button {
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    background-color: #0066cc;
+    border: none;
+    cursor: pointer;
+    color: #f0f0f0;
+    display: none;
+}
+.results-section {
+    margin-bottom: 20px;
+}
+.video-result {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.video-result img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+section .video-results{
+    height: 40vh;
+    max-height: 40vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.info-section {
+    text-align: center;
+}
+
+#connected, #credits {
+    font-weight: bold;
+}
+
+input {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 18px 0px 0px 18px;
+    border: none;
+
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button {
+    font-size: 33.3px;
+    position: absolute;
+    color: #0066cc;
+    width: 15%;
+    margin-top: 5px;
+    border-radius: 0px 18px 18px 0px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.search {
+    font-size: 20px;
+    left: -1px;
+    top: -4px;
+    position: relative
+}
+
+#storage-form {
+    width: 85%;
+}

@@ -1,0 +1,115 @@
+section {
+  width: 75%;
+  height: 100vh;
+  float: left;
+}
+section img {
+  width: 100%;
+  height: 100vh;
+}
+aside {
+  width: 25%;
+  height: 100vh;
+  float: left;
+  display: flex;
+}
+.header{
+  height: 15vh;
+}
+ul li {
+  height: 10vh;
+}
+ul li h3 {
+  padding: 0.5rem;
+}
+
+/* Contenedor principal como flexbox */
+
+main {
+  display: flex;
+  min-height: 100vh;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+/*Lista de reproducción styles*/
+#ytplayer{
+  height: 100%;
+}
+.mini img {
+  width: 5vw;
+  height: 100%;
+}
+
+ul {
+  width: 100%;
+  height: 50vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+ul li {
+  display: flex;
+  background-color: rgba(217, 217, 217, .3);
+  height: 100px;
+  max-height: 100px;
+  width: 90%;
+  max-width: 90%;
+  margin: 0.6rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  align-items: center;
+}
+ul,
+aside {
+  display: flex; /* Contenedor del aside como flexbox */
+  flex-direction: column; /* Alinea elementos verticalmente */
+  align-items: center; /* Centra elementos horizontalmente */
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: var(--font-segundario);
+}
+
+/*Logo styles*/
+
+h1 {
+  font-weight: 600;
+  font-size: 36px;
+}
+span {
+  color: var(--color-segundario);
+  font-weight: 900;
+  font-family: var(--font-principal);
+}
+
+h4 {
+  font-family: var(--font-segundario);
+  font-size: 20px;
+  text-transform: uppercase;
+  float: right;
+  padding: 1rem;
+}
+
+/*canciones en cola styles*/
+
+h5 {
+  font-size: 20px;
+  font-family: var(--font-segundario);
+}
+.contador-pendientes{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+.lista-videos{
+  height: 50vh;
+}
+.qr-code{
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
